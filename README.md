@@ -67,6 +67,8 @@ The results of the model were:
 - MAE: 164,236
 - RMSE: 96,385
 
+![benchmark](./images/benchmark.png)
+
 With a relatively high R2 we can already say the model fits our observations and generelizes well. 
 
 
@@ -85,14 +87,21 @@ With all the scaling techniques and using feature selection we tried to improve 
 - MAE: 60,539
 - RSME: 92,483
 
+![v1](./images/no_outliers.png)
+
 The other model which showed good results was the one with no outliers and with sqft_living feature removed: 
 - R2: 0.88
 - MAE: 63,451
 - RSME: 102,110
 
+![v2](./images/v2_model.png)
+
+
+### Next steps
+In order to further improve the model we could test the model with using log transformation of features or rediscuss the model complexity (towards lowering the amount of features to simply the model). Another possible approach we could test would be to try other models (e.g. KNN Regression algorithm) to compare with the predictions of linear regression model. 
+
+
 <img src="https://s.wsj.net/public/resources/images/BN-NW620_Modern_TOP_20160504200231.jpg" width = 450 alt="step1" title="Modern house" />
-
-
 
 
 
